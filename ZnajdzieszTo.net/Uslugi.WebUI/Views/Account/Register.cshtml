@@ -1,0 +1,41 @@
+﻿@model Uslugi.Domain.Entities.User
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Register.cshtml";
+}
+
+<div class="login-text">
+    Zarejestruj się
+    <br />
+    <p class="inf-text">Jesteś o krok od znalezienia tego czego szukasz!</p>
+</div>
+
+<div>
+    @using (Html.BeginForm("Register", "Account"))
+    {        
+
+        @Html.TextBoxFor(x => x.Email, null, new { @class = "login-input", @placeholder = "Adres e-mail" })
+
+        @Html.TextBoxFor(x => x.Password, null, new { @class = "pass-input", @placeholder = "Hasło" })
+
+        <div class="register-valid-ccc">
+            @Html.ValidationSummary()
+        </div>     
+
+        @Html.CheckBox("checkbox-register", false)
+        <div class="chbx-info-1">
+            Akceptuję Regulamin w celu korzystania z bezpłatnego konta w serwisie
+        </div>
+
+        @Html.CheckBox("checkbox-register-2", false)
+        <div class="chbx-info-2">
+            Chcę otrzymywać mailem informacje marketingowe od ZnajdzieszTo.pl
+        </div>
+
+        <button class="register-button" type="submit">Zarejestruj się</button>
+    }
+</div>
+
+<div class="register-to-login">
+    Posiadasz konto? <a href="@Url.Action("Login", "Account")" class="login-create-text"> Zaloguj się</a>
+</div>

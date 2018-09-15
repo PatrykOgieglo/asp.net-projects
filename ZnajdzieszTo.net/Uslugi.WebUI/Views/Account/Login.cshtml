@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Login.cshtml";
+}
+
+<div class="login-text">
+    Zaloguj się
+</div>
+
+<div>
+    @using (Html.BeginForm())
+    {
+        @Html.TextBox("login-input", null, new { @placeholder = "Adres e-mail" })
+
+        @Html.TextBox("pass-input", null, new { @placeholder = "Hasło" })
+        
+        <button class="login-button" type="submit">Dalej</button>
+    }
+</div>
+
+<div class="login-opt">
+    <a href="@Url.Action("ForgotPass", "Account")" class="login-txt">Zapomniałem hasła</a>
+</div>
+
+<div class="login-create">
+    Nie masz konta? <a href="@Url.Action("Register", "Account")" class="login-create-text"> Zarejestruj się</a>
+</div>
+

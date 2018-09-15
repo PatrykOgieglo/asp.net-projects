@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "ForgotPass";
+    Layout = "~/Views/Shared/_Account.cshtml";
+}
+
+<div class="forgot-text">
+    Podaj swój adres e-mail
+</div>
+
+<div>
+    @using (Html.BeginForm())
+    {
+        @Html.TextBox("forgot-mailbox", null, new { @placeholder = "Adres e-mail" })
+
+        <button class="forgot-button" type="submit">Dalej</button>
+    }
+</div>

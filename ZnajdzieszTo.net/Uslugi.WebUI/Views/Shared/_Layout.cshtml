@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/style.css" type="text/css" />
+    <link rel="stylesheet" href="~/Content/fontello/css/fontello.css" />
+</head>
+<body>
+    <div class="nav-bar">
+        @Html.Action("Navigation", "Nav")
+    </div>
+    <div class="home-content">
+        <div>
+            @Html.Action("Search", "Home")
+        </div>
+        <div class="info-container">
+            @RenderBody()
+        </div>
+    </div>
+    <div class="footer">
+        @Html.Action("Footer", "Nav")
+    </div>
+</body>
+</html>

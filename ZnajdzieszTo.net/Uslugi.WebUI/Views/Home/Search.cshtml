@@ -1,0 +1,33 @@
+﻿@model string
+
+<div class="search-cont">
+    <img class="mySlides" src="~/Img/adult-architect-blueprint-416405.jpg">
+    <img class="mySlides" src="~/Img/advice-business-colleagues-1161465.jpg">
+    <img class="mySlides" src="~/Img/ballpen-blur-close-up-461077.jpg">
+    <div class="search-box-bb">
+        @using (Html.BeginForm("Index", "Uslugi", FormMethod.Get))
+        {
+            @Html.TextBox("keyWord", null, new { @class = "search-box", @placeholder ="Wpisz słowo klucz" })  
+
+            <button class="button-search" type="submit"><i class="icon-search"></i></button>
+        }
+    </div>
+</div>
+
+<!--Slideshow-->
+<script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) { slideIndex = 1 }
+        x[slideIndex - 1].style.display = "block";
+        setTimeout(carousel, 6000);
+    }
+</script>

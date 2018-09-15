@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/style.css" type="text/css" />
+    <link rel="stylesheet" href="~/Content/fontello/css/fontello.css" />
+</head>
+<body>
+    <div class="login-up-bar">
+
+    </div>
+    <div class="login-content">
+        <div class="register-box">
+            @RenderBody()
+        </div>
+    </div>
+    <div class="login-footer">
+        @Html.Action("Footer", "Nav")
+    </div>
+</body>
+</html>
