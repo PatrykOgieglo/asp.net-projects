@@ -1,0 +1,40 @@
+﻿@model myTarantulas.Domain.Entities.User
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Styles.css" />
+    <title>myTarantulas - Login</title>
+</head>
+<body class="login-container">
+    <div class="login-box">
+        <div class="login-logo">
+            <img src="~/Img/logo1.png" class="img-logo" width="300" />
+        </div>
+        <div class="login-input">
+            @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+            {
+                <p>@Html.TextBoxFor(a => a.Email, null, new { @class = "login-input-form", placeholder="E-mail" } )</p>
+                <p>@Html.TextBoxFor(a => a.Password, null, new { @class = "login-input-form", placeholder = "Password" })</p>
+
+                @Html.HiddenFor(a => a.Username, new { Value = "Username" })
+                <input type="submit" value="Login" class="login-button" />
+            }
+        </div>
+        <div class="login-options">
+            <div class="register">
+                <a href="@Url.Action("Register", "Account")" style="color: #fff;">Register</a>
+            </div>
+            <div class="dont-remember">
+                Forgot your password?
+            </div>
+        </div>
+    </div>
+</body>
+</html>

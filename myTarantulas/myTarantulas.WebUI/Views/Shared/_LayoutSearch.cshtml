@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/style.css" type="text/css" />
+</head>
+<body style="background-image: url('/Img/breeder-wall.png');">
+    <div class="search-container">
+        @Html.Partial("SearchBox")
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

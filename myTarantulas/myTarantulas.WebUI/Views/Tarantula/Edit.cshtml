@@ -1,0 +1,58 @@
+﻿@model myTarantulas.Domain.Entities.Tarantula
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_BreederAddLayout.cshtml";
+}
+
+<div class="edit-tarantula">
+    <div class="edit-tarantula-photo">
+
+    </div>
+    <div class="edit-tarantula-inputs">
+        @using (Html.BeginForm("Edit", "Tarantula"))
+        {
+            @Html.ValidationSummary()
+
+            @Html.HiddenFor(a => a.TarantulaID);
+
+            <div class="input-inf">Type</div> <p> @Html.TextBoxFor(a => a.Type, null, new { @class = "input-long-edit", @Value = Model.Type })</p>
+
+            <div class="input-inf">Phase</div> <p> @Html.DropDownListFor(a => a.Phase, new[] {
+                    new SelectListItem() { Text = "L1", Value = "L1" },
+                    new SelectListItem() { Text = "L2", Value = "L2" },
+                    new SelectListItem() { Text = "L3", Value = "L3" },
+                    new SelectListItem() { Text = "L4", Value = "L4" },
+                    new SelectListItem() { Text = "L5", Value = "L5" },
+                    new SelectListItem() { Text = "L6", Value = "L6" },
+                    new SelectListItem() { Text = "L7", Value = "L7" },
+                    new SelectListItem() { Text = "L8", Value = "L8" },
+                    new SelectListItem() { Text = "L9", Value = "L9" },
+                    new SelectListItem() { Text = "L10", Value = "L10" },
+                    new SelectListItem() { Text = "L11", Value = "L11" },
+                    new SelectListItem() { Text = "L12", Value = "L12" },
+                    new SelectListItem() { Text = "L13", Value = "L13" },
+                    new SelectListItem() { Text = "L14", Value = "L14" },
+                    new SelectListItem() { Text = "L15", Value = "L15" },
+                }, new { @class = "input-long", placeholder = "Phase" }) </p>
+
+            <div class="input-inf">Sex</div> <p> @Html.DropDownListFor(a => a.Sex, new[] {
+                    new SelectListItem() { Text = "Female", Value = "Female" },
+                    new SelectListItem() { Text = "Male", Value = "Male" },
+                    new SelectListItem() { Text = "Nosex", Value = "Nosex" },
+                }, new { @class = "input-long", placeholder = "Sex" }) </p>
+
+            <div class="input-inf">Num</div> <p>@Html.TextBoxFor(a => a.NumberOf, null, new { @class = "input-long-edit", @Value = Model.NumberOf })</p>
+
+            <div class="input-inf">Price</div> <p>@Html.TextBoxFor(a => a.Price, null, new { @class = "input-long-edit", @Value = Model.Price != null ? Math.Round((decimal)Model.Price) : 0 })</p>
+
+            @Html.HiddenFor(a => a.UserID)
+
+            <input type="submit" class="submit-new-tarantula" value="Save" />
+        }
+
+        <a href="@Url.Action("Tarantulas", "Breeder")">
+            <input type="button" class="submit-new-tarantula-edit" value="Back" />
+        </a>
+    </div>
+</div>

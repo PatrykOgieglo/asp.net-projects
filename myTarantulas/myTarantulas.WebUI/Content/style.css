@@ -1,0 +1,1381 @@
+﻿a{
+    text-decoration: none;
+}
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.logo{
+    height: 155px;
+    width: auto;
+    background-color: #0e0e0e;
+    border-bottom: 2px solid #fff;
+}
+
+.logo-img{
+    height: 100px;
+    width: 300px;
+    margin-left: 42vw;
+    margin-top: 24px;
+    position: absolute;
+}
+
+.logo-img-breeder{
+    height: 100px;
+    width: 300px;
+    margin-left: 42vw;
+    margin-top: 31px;
+    position: absolute;
+}
+
+.navigation-bar{
+    height: 70px;
+    width: auto;
+}
+
+.nav-bar-region{
+    position: absolute;
+    width: 1200px;
+    height: 50px;
+    margin-top: 14vh;
+    margin-left: 23.3vw;
+}
+
+.button-nav-bar{
+    float: left;
+    height: 43px;
+    width: 6.8vw;
+    margin-left: 102px;
+    margin-top: 5px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 38px;
+    color: #fff;
+    font-size: 18px;
+    display:inline-block;
+    border-top:3px solid #fff;
+    border-color:#eee;
+    padding-bottom:2px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    box-sizing:border-box;
+}
+
+.button-nav-bar-animation{
+    width:100%;
+    height:0;
+    background-color:rgba(255,255,255,0.31415);
+    color:#fff;
+}
+
+.button-nav-bar:hover .button-nav-bar-animation{
+    animation-name: pull_down;
+    animation-duration: .25s;
+    height:40px;  
+}
+
+.button-nav-bar:hover{
+    cursor: pointer;
+}
+
+.index-wallpaper{
+    width:100vw;
+    position: absolute;
+}
+
+.container{
+    width: 99.14vw;
+    height: 100vh;
+    background: url('/Img/index-wall4.png');
+    background-attachment: cover;
+    background-size: 100vw 100.5vh;
+    -webkit-box-shadow: 0px 4px 33px 5px rgba(0,0,0,0.85);
+    -moz-box-shadow: 0px 4px 33px 5px rgba(0,0,0,0.85);
+    box-shadow: 0px 4px 33px 5px rgba(0,0,0,0.85);
+}
+
+.content-home{
+    height: 75vh;
+    background-color:#fff;
+    margin-top:50px;
+    width: 100%;
+}
+
+.footer{
+    -webkit-box-shadow: 0px -4px 33px 5px rgba(0,0,0,0.85);
+    -moz-box-shadow: 0px -4px 33px 5px rgba(0,0,0,0.85);
+    box-shadow: 0px -4px 33px 5px rgba(0,0,0,0.85);
+    height: 200px;
+    background-color: #1b1b1b;
+}
+
+.footer-logo{
+    float: left;
+    width: 200px;
+    height: 100px;
+    margin-left: 70px;
+    margin-top: 70px;
+}
+
+.footer-socialmedia{
+    float: left;
+    width: 500px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 100px;
+    float: left;
+}
+
+.fa {
+    float: left;
+    margin-top: 25px;
+    padding: 15px;
+    font-size: 30px;
+    width: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    float: left;
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    float: left;
+    background: #3B5998;
+    color: white;
+}
+
+.fb-link{
+    width: 200px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.login-container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/Img/login-wall-blur.jpg');
+    background-size: cover;
+}
+
+.login-box{
+    height: 500px;
+    width: 450px;
+    background-color: rgba(256,256,256, 0.55);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-box-shadow: 0px 0px 56px 14px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 56px 14px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 56px 14px rgba(0,0,0,0.5);
+}
+
+.login-logo{
+    width: 350px;
+    height: 110px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.img-logo{
+    margin-left: 8%;
+    margin-top: 10%;
+}
+
+.login-input{
+    width: 350px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(13.5%, 23%);
+}
+
+.login-input-form{
+    top: 50%;
+    left: 50%;
+    transform: translate(11%, -30%);
+    width: 270px;
+    height: 30px;
+    outline: none;
+    margin-top: 20px;
+    padding: 10px 10px;
+    border: none;
+    font-size: 19px;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    background: rgba(256, 256, 256, 0.28);
+    padding-left: 15px;
+}
+
+.login-button{
+    width: 295px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(11%, 50%);
+    outline: none;
+    background-color: #a36400;
+    border: none;
+    font-size: 16.5px;
+    -webkit-box-shadow: 0px 0px 56px -6px rgba(0,0,0,0.44);
+    -moz-box-shadow: 0px 0px 56px -6px rgba(0,0,0,0.44);
+    box-shadow: 0px 0px 56px -6px rgba(0,0,0,0.44);
+    cursor: pointer;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #fff;
+}
+
+.login-options{
+    height: 23px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-48.8%, 850%);
+}
+
+.register{
+    float: left;
+    width: 130px;
+    height: 17px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.register-register{
+    float: left;
+    width: 130px;
+    height: 17px;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 80px;
+    cursor: pointer;
+}
+
+.dont-remember{
+    float: left;
+    width: 130px;
+    height: 17px;
+    margin-left: 165px;
+    margin-top: -17px;
+    font-size: 14px;
+    color: #fff;
+    padding-left: 0px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.register-container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/Img/register-wall.jpg');
+    background-size: cover;
+}
+
+.register-box{
+    height: 700px;
+    width: 450px;
+    background-color: rgba(256,256,256, 0.55);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-box-shadow: 0px 0px 56px 14px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 56px 14px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 56px 14px rgba(0,0,0,0.5);
+}
+
+.register-input{
+    width: 350px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(13.5%, 10%);
+}
+
+.register-input-form{
+    top: 50%;
+    left: 50%;
+    transform: translate(11%, -30%);
+    width: 270px;
+    height: 30px;
+    outline: none;
+    margin-top: 20px;
+    padding: 10px 10px;
+    border: none;
+    font-size: 19px;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    background: rgba(256, 256, 256, 0.28);
+    padding-left: 15px;
+}
+
+.register-options{
+    height: 23px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-48.8%, 1250%);
+}
+
+.register-button{
+    width: 295px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(11%, 100%);
+    outline: none;
+    background-color: #a36400;
+    border: none;
+    font-size: 16.5px;
+    -webkit-box-shadow: 0px 0px 56px -6px rgba(0,0,0,0.44);
+    -moz-box-shadow: 0px 0px 56px -6px rgba(0,0,0,0.44);
+    box-shadow: 0px 0px 56px -6px rgba(0,0,0,0.44);
+    cursor: pointer;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #fff;
+}
+
+.breeder-bar{
+    width: 100vw;
+    height: 140px;
+    background-color: #000;
+    -webkit-box-shadow: 0px 10px 25px 3px rgba(0,0,0,0.63);
+    -moz-box-shadow: 0px 10px 25px 3px rgba(0,0,0,0.63);
+    box-shadow: 0px 10px 25px 3px rgba(0,0,0,0.63);
+}
+
+.breeder-container{
+    height: 100vh;
+    width: 100%;
+    background: url('/Img/breeder=container.png');
+    background-size: cover;
+}
+
+.breeder-menu-box{
+    float: left;
+    position: fixed;
+    height: 740px;
+    width: 350px;
+    margin-left: 55px;
+    margin-top: 160px;
+    background: rgba(256, 256, 256, 0.314); -webkit-box-shadow: 0px -1px 55px 14px rgba(0,0,0,0.12);
+    -moz-box-shadow: 0px -1px 55px 14px rgba(0,0,0,0.12);
+    box-shadow: 0px -1px 55px 14px rgba(0,0,0,0.12);
+}
+
+.breeder-button{
+    height: 56px;
+    width: 275px;
+    background-color: rgba(0, 0, 0, 0.50);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75.5px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 55px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 1px;
+    border-radius: 2px;
+}
+
+.breeder-button:hover{
+    animation-name: button_pull;
+    animation-duration: .2s;
+    padding: 3px;
+    margin-bottom: -6px;
+}
+
+.breeder-content{
+    height: 740px;
+    width: 1345px;
+    background: rgba(256, 256, 256, 0.314);
+    margin-left: 27vw;
+    margin-top: 160px;
+    position: absolute;
+    -webkit-box-shadow: 0px -1px 55px 14px rgba(0,0,0,0.12);
+    -moz-box-shadow: 0px -1px 55px 14px rgba(0,0,0,0.12);
+    box-shadow: 0px -1px 55px 14px rgba(0,0,0,0.12);
+}
+
+.profil-image{
+    float: left;
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    margin-left: 307px;
+    margin-top: 60px;
+    border-radius: 50%;
+}
+
+.profil-name{
+    float: left;
+    width: 400px;
+    height: 70px;
+    margin-top: 110px;
+    margin-left: 56px;
+    vertical-align: middle;
+    line-height: 72px;
+    padding-left: 30px;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.number-of-tarantulas{
+    float: left;
+    width: 400px;
+    height: 30px;
+    margin-top: -10px;
+    margin-left: 60px;
+    vertical-align: middle;
+    line-height: 72px;
+    padding-left: 30px;
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.www-fb{
+    float: left;
+    width: 400px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 60px;
+    vertical-align: middle;
+    line-height: 72px;
+    padding-left: 30px;
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.base-info{
+    position: absolute;
+    float: left;
+    clear: both;
+    width: 400px;
+    height: 110px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, 150%);
+}
+
+.plus-fb{
+   position: absolute;
+   margin-top: 25px;
+   margin-left: 10px;
+   cursor: pointer;
+}
+
+.about-container{
+    height: 280px;
+    width: 1100px;
+    margin-top: 390px;
+    margin-left: 122.5px;
+}
+
+.content-tarantulas{
+    height: 600px;
+    width: 1150px;
+    margin-left: 135px;
+    margin-top: 70px;
+}
+
+.table-information{
+    background-color: #000;
+    height: 50px;
+}
+
+.tarantula-name{
+    width: 500px;
+    height: 40px;
+    margin-left: 35px;
+    margin-top: 5px;
+    color: #000;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    padding-left: 30px;
+    font-size: 16px;
+    float: left;
+    border-bottom: solid 1px #000;
+    padding-bottom: 8px;
+    font-family: Tahoma;
+    margin-bottom: 15px;
+}
+
+.tarantula-phase{
+    float: left;
+    width: 150px;
+    height: 40px;
+    margin-left: 550px;
+    position: absolute;
+    margin-top: 5px;
+    color: #000;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    padding-left: 11px;
+    font-size: 16px;
+    border-bottom: solid 1px #000;
+    padding-bottom: 8px;
+    font-family: Tahoma;
+}
+
+.tarantula-sex{
+    float: left;
+    width: 131px;
+    height: 40px;
+    margin-left: 678px;
+    position: absolute;
+    margin-top: 5px;
+    color: #000;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    font-size: 16px;
+    border-bottom: solid 1px #000;
+    padding-bottom: 8px;
+    font-family: Tahoma;
+}
+
+.tarantula-number{
+    float: left;
+    width: 96px;
+    height: 40px;
+    margin-left: 805px;
+    position: absolute;
+    margin-top: 5px;
+    text-align: center;
+    color: #000;
+    vertical-align: middle;
+    line-height: 40px;
+    padding-left: 11px;
+    font-size: 16px;
+    border-bottom: solid 1px #000;
+    padding-bottom: 8px;
+    font-family: Tahoma;
+}
+
+.tarantula-info{
+    background-color: red;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.tarantula-name-label{
+    width: 506px;
+    height: 40px;
+    margin-left: 34px;
+    color: #000;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 40px;
+    padding-left: 20px;
+    font-size:14px;
+    float: left;
+    font-family: 'Mukta', sans-serif;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.tarantula-phase-label{
+    float: left;
+    width: 61px;
+    height: 40px;
+    margin-left: 605px;
+    position: absolute;
+    color: #000;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    font-size: 16px;
+    font-family: 'Mukta', sans-serif;
+    color: #fff;
+}
+
+.tarantula-sex-label{
+    float: left;
+    width: 55px;
+    height: 40px;
+    margin-left: 708px;
+    position: absolute;
+    color: #000;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 40px;
+    padding-left: 16.5px;
+    font-size: 16px;
+    font-family: 'Mukta', sans-serif;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+.tarantula-number-label{
+    float: left;
+    width: 100px;
+    height: 40px;
+    margin-left: 815px;
+    position: absolute;
+    color: #000;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+    color: #fff;
+}
+
+.tarantula-edit{
+    float: left;
+    width: 200px;
+    height: 40px;
+    margin-left: 900px;
+    position: absolute;
+    color: #000;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+    word-spacing: 30px;
+    padding-top: 2px;
+}
+
+.tarantula-checkbox input{
+    width: 18px;
+    height: 18px;
+    margin-top: -9px;
+    position: absolute;
+    cursor: pointer;
+    background: #000;
+}
+
+.table-name{
+    width: 300px;
+    height: 80px;
+    margin-left: 370px;
+    font-size: 40px;
+    vertical-align: middle;
+    line-height: 80px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5px;
+    letter-spacing: 5px;
+}
+
+.arg-no-t{
+    width: 400px;
+    height: 60px;
+    position: absolute;
+    margin-left: 195px;
+    margin-top: 140px;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    vertical-align: middle;
+    line-height: 55px;
+    text-align: center;
+    padding-left: 180px;
+    letter-spacing: 4px;
+}
+
+.messages-title{
+    width: 500px;
+    height: 40px;
+    margin-left: 135px;
+    margin-top: 5px;
+    color: #000;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    padding-left: 30px;
+    font-size: 16px;
+    float: left;
+    border-bottom: solid 1px #000;
+    padding-bottom: 8px;
+    font-family: Tahoma;
+    margin-bottom: 15px;
+}
+
+.messages-from{
+    float: left;
+    width: 200px;
+    height: 40px;
+    margin-left: 710px;
+    position: absolute;
+    margin-top: 5px;
+    color: #000;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    font-size: 16px;
+    border-bottom: solid 1px #000;
+    padding-bottom: 8px;
+    font-family: Tahoma;
+}
+
+.add-container{
+    width: 600px;
+    height: 300px;
+    background: rgba(69, 69, 69, .6);
+    position: absolute;
+    margin-left: 28%;
+    margin-top: 16%;
+    -webkit-box-shadow: 0px 0px 39px 1px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 0px 39px 1px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 39px 1px rgba(0,0,0,0.55);
+}
+
+.add-fb-input{
+    width: 335px;
+    height: 35px;
+    position: absolute;
+    margin-left: 125px;
+    margin-top: 130px;
+    outline: none;
+    font-size: 20px;
+    padding-left: 15px;
+    background: rgba(255, 255, 255, .15);
+    border: 2px solid #4a4a4a;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.add-fb-text{
+    width: 300px;
+    height: 50px;
+    position:absolute;
+    margin-top: 60px;
+    margin-left: 150px;
+    vertical-align: middle;
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #dbdbdb;
+}
+
+.add-fb-button{
+    position:absolute;
+    margin-top: 210px;
+    margin-left: 125px;
+    width: 352px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: rgba(0, 0, 0, 0.35);
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+}
+
+.add-tarantula-other{
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    margin-top: 480px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 35px;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #ffffff;
+}
+
+.add-tarantula-container{
+    width: 500px;
+    min-height: 730px;
+    position:absolute;
+    background: rgba(255, 255, 255, .6);
+    left: 36.5%;
+    top: 18%;
+    -webkit-box-shadow: 0px 0px 83px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 83px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 83px -10px rgba(0,0,0,0.75);
+}
+
+.add-header{
+    height: 100px;
+    width: 300px;
+    margin-left: 100px;
+    margin-top: 30px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+
+.input-long{
+    width: 328px;
+    height: 40px;
+    margin-left: 80px;
+    margin-top: 25px;
+    border: none;
+    border-bottom: 2px solid rgba(49, 49, 49, .8);
+    outline: none;
+    padding-left: 12px;
+    background: rgba(255, 255, 255, .0);
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.input-long-search{
+    width: 35.5vw;
+    height: 40px;
+    margin-left: 4vw;
+    margin-top: 9px;
+    border: none;
+    border-bottom: 2px solid rgba(49, 49, 49, .8);
+    outline: none;
+    padding-left: 22px;
+    background: rgba(255, 255, 255, .0);
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.input-long-edit{
+    width: 271px;
+    height: 40px;
+    margin-left: 80px;
+    margin-top: 8px;
+    border: none;
+    border-bottom: 2px solid rgba(49, 49, 49, .8);
+    outline: none;
+    padding-left: 80px;
+    background: rgba(255, 255, 255, .0);
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.input-inf{
+    position: absolute;
+    width: 40px;    
+    height: 40px;
+    vertical-align: middle;
+    line-height: 38px;
+    margin-top: 10px;
+    margin-left: 90px;
+    font-size: 18px;
+    font-family: 'Mukta', sans-serif;
+}
+
+.submit-new-tarantula{
+    width: 340px;
+    height: 40px;
+    margin-left: 80px;
+    border: none;
+    margin-top: 33px;
+    background-color: rgba(49, 49, 49, .8);
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: static;
+    font-family: 'Mukta', sans-serif;
+    line-height: 35px;
+}
+
+.submit-new-tarantula-edit{
+    width: 340px;
+    height: 40px;
+    margin-left: 80px;
+    border: none;
+    margin-top: 13px;
+    background-color: rgba(49, 49, 49, .8);
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: 'Mukta', sans-serif;
+    line-height: 35px;
+    position: absolute;
+}
+
+.edit-tarantula{
+    width: 600px;
+    height: 750px;
+    background: rgba(255, 255, 255, .6);
+    margin-left: 34%;
+    margin-top: 165px;
+    position: absolute;
+}
+
+.edit-tarantula-photo{
+    width: 130px;
+    height: 120px;
+    background-color: #fff;
+    margin-left: 235px;
+    margin-top: 40px;
+}
+
+.edit-tarantula-inputs{
+    width: 350px;
+    height: 440px;
+    margin-left: 45px;
+    margin-top: 40px;
+    position: static;
+}
+
+.checkbox-edit{
+     position: static;
+     margin-left: 160px;
+     margin-top: 13px;    
+     cursor: pointer; 
+}
+
+.checkbox-edit input{
+    width: 18px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.input-check{
+    width: 60px;
+    height: 40px;
+    margin-left: 80px;
+    margin-top: 5px;
+    font-size: 18px;
+    font-family: 'Mukta', sans-serif;
+    position: absolute;
+    border-bottom: 2px solid rgba(49, 49, 49, .8);
+    padding-left: 10px;
+}
+
+.page-link{
+    width: 500px;
+    height: 40px;
+    position: absolute;
+    margin-top: 440px;
+    margin-left: 265px;
+}
+
+.page-link-box{
+    width: 25px;
+    height: 25px;
+    background-color: rgba(220, 220, 220, 0.63);
+    position: static;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+    text-align: center;
+    line-height: 25px;
+    text-decoration: none;
+    outline: none;
+    display:inline-block;
+    color: #000;
+    border-radius: 5px;
+}
+
+.page-link-center{
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 35px;
+    margin-top: 2.5px;
+}
+
+.search-container{
+    width: 80vw;
+    height: 900px;
+    margin-left: 10vw;
+    margin-top: 4vh;
+    position: absolute;
+}
+
+.search-box{
+    position: absolute;
+    width: 45vw;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-left: 17.5vw;
+    margin-top: 50px;
+    -webkit-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
+    color: #fff;
+}
+
+.search-users{
+    position: absolute;
+    width: 45vw;
+    height: 650px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-left: 27.5vw;
+    margin-top: 220px;
+    -webkit-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+}
+
+.user-box{
+    width: 40vw;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.63);
+    margin-top: 22px;
+    margin-left: 2.5vw;
+    -webkit-box-shadow: 0px 0px 26px -2px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 0px 26px -2px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 26px -2px rgba(0,0,0,0.45);
+    border-radius: 5px;
+}
+
+.user-box-username{
+    width: 12vw;
+    height: 25px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 15px;
+    line-height: 25px;
+    padding-left: 10px;
+    font-size: 15px;
+    font-family: 'Mukta', sans-serif;
+    letter-spacing: 0.5px;
+    -webkit-box-shadow: 0px 0px 26px -2px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 0px 26px -2px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 26px -2px rgba(0,0,0,0.45);
+    border-radius: 5px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.user-box-fb{
+    width: 15vw;
+    height: 25px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 15.5vw;
+    line-height: 25px;
+    font-size: 15px;
+    font-family: 'Mukta', sans-serif;
+    padding-left: 10px;
+    -webkit-box-shadow: 0px 0px 26px -2px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 0px 26px -2px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 26px -2px rgba(0,0,0,0.45);
+    border-radius: 5px;
+    color: #fff;
+}
+
+.user-box-show{
+    width: 5vw;
+    height: 30px;
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 33vw;
+    line-height: 30px;
+    font-size: 14px;
+    font-family: 'Mukta', sans-serif;
+    padding-left: 10px;
+}
+
+.profile-button{
+    width: 4.5vw;
+    height: 25px;
+    background-color: rgba(49, 49, 49, .6);
+    position: absolute;
+    margin-top: 2.5px;
+    text-align: center;
+    line-height: 27px;
+    text-decoration: none;
+    color: #fff;
+    -webkit-box-shadow: 0px 0px 26px -2px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 0px 26px -2px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 26px -2px rgba(0,0,0,0.45);
+    font-size: 12.5px;
+}
+
+.search-body{
+    background-color: #e1e1e1;
+}
+
+.search-button{
+
+}
+
+.profile-container{
+    width: 1300px;
+    height: 800px;
+    background-color: rgba(38, 38, 38, 0.35);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    -webkit-box-shadow: 0px 0px 30px -2px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 30px -2px rgba(0,0,0,0.6);
+    box-shadow: 0px 0px 30px -2px rgba(0,0,0,0.6);
+}
+
+
+.profile-body{
+    background-image: url('/Img/register-wall.jpg');
+    background-size: cover;
+}
+
+.profile-bar{
+    width: 800px;
+    height: 85px;
+    margin-left: 380px;
+    margin-top: 70px;
+    position: absolute;
+}
+
+.profile-img{
+    float: left;
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.28);
+    margin-left: 200px;
+    margin-top: 70px;
+}
+
+.profile-nav{
+    width: 800px;
+    height: 50px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 380px;
+}
+
+.profile-content{
+    width: 1050px;
+    height: 450px;
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 130px;
+}
+
+.profile-but{
+    width: 100px;
+    height: 40px;
+    margin-left: 81px;
+    margin-top: 5px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16.5px;
+    border-bottom: 1.5px solid #000;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+.profile-but:hover{
+    background-color: rgba(255, 255, 255, 0.60);
+    color: #000;
+}
+
+.profile-name{
+    width: 240px;
+    height: 50px;
+    margin-top: 12.5px;
+    margin-left: 63px;
+    line-height: 58px;
+    padding-left: 20px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    float:left;
+    color: #fff;
+
+}
+
+.profile-fb{
+    width: 340px;
+    height: 50px;
+    margin-top: 12.5px;
+    margin-left: 404px;
+    line-height: 58px;
+    padding-left: 20px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.profile-back{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-top: 550px;
+    margin-left: 820px;
+    cursor: pointer;
+}
+
+.exit-button{
+    margin-left: -7vw;
+    cursor: pointer;
+}
+
+.home-users{
+    width: 400px;
+    height: 150px;
+    margin-left: 20vw;
+    margin-top: 270px;
+    float: left;
+    position: absolute;
+}
+
+.home-users-number-2{
+    font-size: 63px;
+    float: right;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: -90px;
+}
+
+.home-users-number{
+    font-size: 63px;
+    float: right;
+    position: absolute;
+    margin-left: 220px;
+    margin-top: -110px;
+}
+
+.home-spiders{
+    float: left;
+    position: absolute;
+    margin-left: 45.5vw;
+    margin-top: 240px;
+}
+
+.home-other{
+    float: left;
+    position: absolute;
+    margin-left: 72vw;
+    margin-top: 240px;
+}
+
+.rest-footer{
+    float: left;
+    width: 1100px;
+    height: 120px;
+    margin-top: 40px;
+    margin-left: 34vw;
+    position: absolute;
+}
+
+
+.contact-footer{
+    width: 230px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 130px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 19px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    position: absolute;
+}
+
+.submit-footer{
+    float: left;
+    width: 600px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 30vw;
+}
+
+.input-text-footer{
+    width: 14vw;
+    height: 35px;
+    margin-left: 110px;
+    margin-top: 33px;
+    border: none;
+    padding-left: 20px;
+    font-size: 14px;
+    outline: none;
+}
+
+.button-text-footer{
+    width: 70px;
+    height: 37px;
+    position: absolute;
+    margin-top: 32.5px;
+    border: none;
+    -webkit-box-shadow: 6px 0px 25px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 0px 25px -2px rgba(0,0,0,0.75);
+    box-shadow: 6px 0px 25px -2px rgba(0,0,0,0.75);
+    color: #fff;
+    font-size: 15px;
+    background-color: rgba(234, 104, 7, 0.8);
+    outline: none;
+    cursor: pointer;
+}
+
+.p-footer{
+    position: absolute;
+    margin-left: 110px;
+    margin-top: 13px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.about-image{
+    float: left;
+    margin-left: 112px;
+    margin-top: 30px;
+    opacity: .94;
+}
+
+@keyframes pull_down{
+    from {
+       height:0;
+    }
+    to {
+        height:40px;
+    }
+}
+
+@keyframes button_pull{
+    from {
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+    to {
+        padding: 0px;
+        margin-bottom: -3px;
+        margin-top: 79px;
+    }
+}
+
+/*<div>Icons made by <a href="https://www.flaticon.com/authors/iconnice" title="Iconnice">Iconnice</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>*/
+/*<div>Icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>*/
+/*<div>Icons made by <a href="https://www.flaticon.com/authors/chanut" title="Chanut">Chanut</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>*/
+/*<div>Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>*/
+/*<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>*/
+/*<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>*/
+/*<div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>*/

@@ -1,0 +1,55 @@
+﻿@model IEnumerable<myTarantulas.Domain.Entities.OtherTarantulas>
+@{
+    ViewBag.Title = "Tarantulas";
+    Layout = "~/Views/Shared/_ProfileLayout.cshtml";
+}
+
+<table>
+    <tr>
+        <th></th>
+        <th class="tarantula-name">
+            Name
+        </th>
+        <th class="tarantula-phase">
+            Stage
+        </th>
+        <th class="tarantula-sex">
+            Sex
+        </th>
+        <th class="tarantula-number">
+            Quantity
+        </th>
+    </tr>
+    @if (Model.Count() == 0)
+    {
+        <tr class="arg-no-t">
+            <td>
+                No other tarantulas
+            </td>
+        </tr>
+    }
+    else
+    {
+        foreach (var other in Model)
+        {
+            <tr>
+                <td class="tarantula-checkbox">
+                    <label class="tarantula-checkbox"></label>
+                </td>
+                <td class="tarantula-name-label">
+                    @other.Type
+                </td>
+                <td class="tarantula-phase-label">
+                    @other.Phase
+                </td>
+                <td class="tarantula-sex-label">
+                    @other.Sex
+                </td>
+                <td class="tarantula-number-label">
+                    @other.NumberOf
+                </td>
+            </tr>
+        }
+    }
+</table>
+

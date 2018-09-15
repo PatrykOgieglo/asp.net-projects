@@ -1,0 +1,24 @@
+﻿@model myTarantulas.Domain.Entities.User
+
+@{
+    ViewBag.Title = "AddHere";
+    Layout = "~/Views/Shared/_BreederAccountPage.cshtml";
+}
+
+<div class="add-container">
+    <div class="add-fb-text">
+        Website or Facebook
+    </div>
+    @using (Html.BeginForm("AddWebOrFacebook", "Breeder"))
+    {
+        @Html.HiddenFor(a => a.UserID)
+        @Html.HiddenFor(a => a.Username)
+        @Html.HiddenFor(a => a.Email)
+        @Html.HiddenFor(a => a.Password)
+
+        <p>@Html.TextBoxFor(u => u.WebOrFb, null, new { @class = "add-fb-input", @Value = "" })</p>
+
+        <input type="submit" value="Add" class="add-fb-button" />
+    }
+</div>
+

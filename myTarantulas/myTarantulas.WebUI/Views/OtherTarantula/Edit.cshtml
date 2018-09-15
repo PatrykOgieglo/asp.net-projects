@@ -1,0 +1,39 @@
+﻿@model myTarantulas.Domain.Entities.OtherTarantulas
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_BreederAddLayout.cshtml";
+}
+
+<div class="edit-tarantula">
+    <div class="edit-tarantula-photo">
+
+    </div>
+    <div class="edit-tarantula-inputs">
+        @using (Html.BeginForm("Edit", "OtherTarantula"))
+        {
+            @Html.ValidationSummary()
+
+            @Html.HiddenFor(a => a.OtherTarantulaID);
+
+            <div class="input-inf">Type</div> <p> @Html.TextBoxFor(a => a.Type, null, new { @class = "input-long-edit", @Value = Model.Type })</p>
+
+            <div class="input-inf">Phase</div> <p>@Html.TextBoxFor(a => a.Phase, null, new { @class = "input-long-edit", @Value = Model.Phase })</p>
+
+            <div class="input-inf">Sex</div> <p>@Html.TextBoxFor(a => a.Sex, null, new { @class = "input-long-edit", @Value = Model.Sex })</p>
+
+            <div class="input-inf">Num</div> <p>@Html.TextBoxFor(a => a.NumberOf, null, new { @class = "input-long-edit", @Value = Model.NumberOf })</p>
+
+            <div class="input-inf">Price</div> <p>@Html.TextBoxFor(a => a.Price, null, new { @class = "input-long-edit", @Value = Model.Price != null ? Math.Round((decimal)Model.Price) : 0 })</p>
+
+            @Html.HiddenFor(a => a.UserID)
+
+            <input type="submit" class="submit-new-tarantula" value="Save" />
+        }
+
+        <a href="@Url.Action("Others", "Breeder")">
+            <input type="button" class="submit-new-tarantula-edit" value="Back" />
+        </a>
+    </div>
+</div>
+

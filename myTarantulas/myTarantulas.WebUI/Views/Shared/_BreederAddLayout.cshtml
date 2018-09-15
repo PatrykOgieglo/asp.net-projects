@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mukta:500|Roboto:300" rel="stylesheet">
+</head>
+<body>
+    <div class="breeder-container">
+        <div class="logo-img-breeder">
+            <img src="~/Img/logo1-white.png" height="100" />
+        </div>
+
+        <div>
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>

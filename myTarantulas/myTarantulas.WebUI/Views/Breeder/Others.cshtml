@@ -1,0 +1,88 @@
+﻿@model myTarantulas.WebUI.Models.OtherListViewModel
+@{
+    ViewBag.Title = "Others";
+    Layout = "~/Views/Shared/_BreederAccountPage.cshtml";
+}
+
+<div class="content-tarantulas">
+
+    <div class="table-name">
+        Others
+    </div>
+
+    <table class="table-bordered">
+        <tr>
+            <th></th>
+            <th class="tarantula-name">
+                Name
+            </th>
+            <th class="tarantula-phase">
+                Stage
+            </th>
+            <th class="tarantula-sex">
+                Sex
+            </th>
+            <th class="tarantula-number">
+                Quantity
+            </th>
+        </tr>
+        @if (Model.OtherTarantulas.Count() == 0)
+        {
+            <tr class="arg-no-t">
+                <td>
+                    No other tarantulas
+                </td>
+            </tr>
+        }
+        else
+        {
+            foreach (var other in Model.OtherTarantulas)
+            {
+                <tr>
+                    <td class="tarantula-checkbox">
+                        <label class="tarantula-checkbox"></label>
+                    </td>
+                    <td class="tarantula-name-label">
+                        @other.Type
+                    </td>
+                    <td class="tarantula-phase-label">
+                        @if (other.Phase != null)
+                    {
+                            @other.Phase
+                        }
+                        else
+                        {
+                            @: -
+                    }
+                    </td>
+                    <td class="tarantula-sex-label">
+                        @other.Sex
+                    </td>
+                    <td class="tarantula-number-label">
+                        @other.NumberOf
+                    </td>
+                    <td class="tarantula-edit">
+                        <a href='@Url.Action("Edit", "OtherTarantula", new { otherID = other.OtherTarantulaID })'>
+                            <img src='@Url.Content("~/Img/edit.png")' />
+                        </a>
+                        <a href='@Url.Action("Delete", "OtherTarantula", new { otherID = other.OtherTarantulaID })'>
+                            <img src='@Url.Content("~/Img/delete.png")' />
+                        </a>
+                    </td>
+                </tr>
+    }
+}
+        
+
+        <div class="page-link">
+            <div class="page-link-center">
+                @Html.PageLinks(Model.PagingInfo, x => Url.Action("Others", new { page = x, @class = "page-link-box" }))
+            </div>
+        </div>
+        <a href="@Url.Action("AddOtherTarantula", "OtherTarantula")">
+            <div class="add-tarantula-other">
+                +
+            </div>
+        </a>
+    </table> 
+</div>

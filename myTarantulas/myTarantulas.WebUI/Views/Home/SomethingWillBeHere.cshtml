@@ -1,0 +1,13 @@
+﻿@model myTarantulas.WebUI.Models.HomeModel
+
+<div class="home-users">
+    <img src='@Url.Content("~/Img/users.png")' style="width: 100px;" /> <div class="home-users-number-2">@Model.Users.Count().ToString()</div>
+</div>
+
+<div class="home-spiders">
+    <img src='@Url.Content("~/Img/spider.png")' style="width: 150px;" /> <div class="home-users-number">@Model.Tarantula.Count().ToString()</div>
+</div>
+
+<div class="home-other">
+    <img src='@Url.Content("~/Img/other.png")' style="width: 150px;" /> <div class="home-users-number">@Model.Other.Count().ToString()</div>
+</div>

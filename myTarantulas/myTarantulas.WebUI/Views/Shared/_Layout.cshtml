@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+    <div class="container">
+        @if (Session["uname"] == null) {
+            @Html.Partial("NaviagationBar") }
+        else {
+            @Html.Partial("NaviagationBarIfLogin") }
+           
+    </div>
+    <div class="content-home">
+        @{Html.RenderAction("SomethingWillBeHere", "Home");}
+    </div>
+    <div class="footer">
+        <div class="footer-logo">
+            <img src="~/Img/logo1-white.png" width="200" />
+        </div>
+        <div class="footer-socialmedia">
+            <a href="#" class="fa fa-facebook"></a>
+        </div>
+        <div class="rest-footer">
+            <div class="contact-footer">
+                Email: patryk22202@wp.pl
+            </div>
+            <div class="submit-footer">
+                <p class="p-footer">Join our newsletter</p>
+                <input type="text" class="input-text-footer" placeholder="E-mail" />
+                <input type="button" class="button-text-footer" value="Join" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>

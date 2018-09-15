@@ -1,0 +1,113 @@
+﻿@model myTarantulas.WebUI.Models.TarantulaAndOther
+@{
+    ViewBag.Title = "Others";
+    Layout = "~/Views/Shared/_BreederAccountPage.cshtml";
+}
+
+<div class="content-tarantulas">
+
+    <div class="table-name">
+        For Sell
+    </div>
+
+    <table class="table-bordered">
+        <tr>
+            <th></th>
+            <th class="tarantula-name">
+                Name
+            </th>
+            <th class="tarantula-phase">
+                Stage
+            </th>
+            <th class="tarantula-sex">
+                Sex
+            </th>
+            <th class="tarantula-number">
+                Price
+            </th>
+        </tr>
+        @try
+        {
+            bool isToSell = false;
+            foreach (var tarantula in Model.Tarantulas)
+            {
+                if (tarantula.Price != null)
+                {
+                    isToSell = true;
+                    <tr>
+                        <td class="tarantula-checkbox">
+                            <label class="tarantula-checkbox">
+                            </label>
+                        </td>
+                        <td class="tarantula-name-label">
+                            @tarantula.Type
+                        </td>
+                        <td class="tarantula-phase-label">
+                            @tarantula.Phase
+                        </td>
+                        <td class="tarantula-sex-label">
+                            @tarantula.Sex
+                        </td>
+                        <td class="tarantula-number-label">
+                            @tarantula.Price zł
+                        </td>
+                        <td class="tarantula-edit">
+                            <a href='@Url.Action("DeleteFromSellList", "Tarantula", new { tarantulaID = tarantula.TarantulaID })'>
+                                <img src='@Url.Content("~/Img/delete.png")' />
+                            </a>
+                        </td>
+                    </tr>
+                }
+            }
+            foreach (var tarantula in Model.OtherTarantulas)
+            {
+                if (tarantula.Price != null)
+                {
+                    isToSell = true;
+                    <tr>
+                        <td class="tarantula-checkbox">
+                            <label class="tarantula-checkbox">
+                            </label>
+                        </td>
+                        <td class="tarantula-name-label">
+                            @tarantula.Type
+                        </td>
+                        <td class="tarantula-phase-label">
+                            @tarantula.Phase
+                        </td>
+                        <td class="tarantula-sex-label">
+                            @tarantula.Sex
+                        </td>
+                        <td class="tarantula-number-label">
+                            @tarantula.Price zł
+                        </td>
+                        <td class="tarantula-edit">
+                            <a href='@Url.Action("Edit", "OtherTarantula", new { otherID = tarantula.OtherTarantulaID })'>
+                                <img src='@Url.Content("~/Img/edit.png")' />
+                            </a>
+                            <a href='@Url.Action("DeleteFromSellList", "OtherTarantula", new { otherID = tarantula.OtherTarantulaID })'>
+                                <img src='@Url.Content("~/Img/delete.png")' />
+                            </a>
+                        </td>
+                    </tr>
+                }
+            }
+            if (isToSell == false)
+            {
+                <tr class="arg-no-t">
+                    <td>
+                        Nothing to sell
+                    </td>
+                </tr>
+            }
+        }
+        catch (NullReferenceException e)
+        {
+            <tr class="arg-no-t">
+                <td>
+                    Nothing to sell
+                </td>
+            </tr>
+        }
+    </table>
+</div>

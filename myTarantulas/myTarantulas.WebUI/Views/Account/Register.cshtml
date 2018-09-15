@@ -1,0 +1,42 @@
+﻿@model myTarantulas.Domain.Entities.User
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/style.css" type="text/css" />
+    <script src="~/scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/scripts/jquery.validate.min.js"></script>
+    <script src="~/scripts/jquery.validate.unobtrusive.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/Content/Styles.css" />
+    <title>myTarantulas - Register</title>
+</head>
+<body class="register-container">
+    <div class="register-box">
+        <div class="login-logo">
+            <img src="~/Img/logo1.png" class="img-logo" width="300" />
+        </div>
+        <div class="register-input">
+            @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+            {
+                @Html.ValidationSummary()
+                <p>@Html.TextBoxFor(a => a.Username, null, new { @class = "register-input-form", placeholder = "Username" })</p>
+                <p>@Html.TextBoxFor(a => a.Email, null, new { @class = "register-input-form", placeholder = "E-mail" })</p>
+                <p>@Html.TextBoxFor(a => a.Password, null, new { @class = "register-input-form", placeholder = "Password" })</p>
+
+
+                <input type="submit" value="Register" class="register-button" />
+            }
+        </div>
+        <div class="register-options">
+            <div class="register-register">
+                <a href="@Url.Action("LogIn", "Account")" style="color: #fff;">Already have account?</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

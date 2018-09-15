@@ -1,0 +1,13 @@
+﻿<div class="search-box">
+    @using (Html.BeginForm("Index", "Search", FormMethod.Post))
+            {
+        @Html.TextBox("searchInput", null,  new { @class = "input-long-search", placeholder = "Search" })
+        <input type="image" name="submit" src="~/Img/search-icon.png" border="0" alt="Submit" style="width: 30px; margin-left: 1vw; margin-top: 15px; position: absolute;" />
+    }
+</div>
+
+<a href="@Url.Action("Index", "Home")">
+    <div class="exit-button">
+        <img src='@Url.Content("~/Img/exit.png")' style="width: 40px; height: 40px;" />
+    </div>
+</a>

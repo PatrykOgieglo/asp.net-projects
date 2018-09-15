@@ -1,0 +1,21 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/style.css" type="text/css" />
+</head>
+<body class="profile-body">
+    <div class="profile-container">
+        @{Html.RenderAction("ShowProfile", "Profile");}
+        <div class="profile-nav">
+            @Html.Partial("NavProfile")
+        </div>
+        <div class="profile-content">
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>

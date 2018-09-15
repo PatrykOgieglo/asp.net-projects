@@ -1,0 +1,57 @@
+﻿@model IEnumerable<myTarantulas.Domain.Entities.Tarantula>
+@{
+    ViewBag.Title = "For sell";
+    Layout = "~/Views/Shared/_ProfileLayout.cshtml";
+}
+
+<table>
+    <tr>
+        <th></th>
+        <th class="tarantula-name">
+            Name
+        </th>
+        <th class="tarantula-phase">
+            Stage
+        </th>
+        <th class="tarantula-sex">
+            Sex
+        </th>
+        <th class="tarantula-number">
+            Quantity
+        </th>
+    </tr>
+    @{
+        bool isToSell = false;
+    }
+    @foreach (var tarantula in Model)
+    {
+        isToSell = true;
+        <tr>
+            <td class="tarantula-checkbox">
+                <label class="tarantula-checkbox"></label>
+            </td>
+            <td class="tarantula-name-label">
+                @tarantula.Type
+            </td>
+            <td class="tarantula-phase-label">
+                @tarantula.Phase
+            </td>
+            <td class="tarantula-sex-label">
+                @tarantula.Sex
+            </td>
+            <td class="tarantula-number-label">
+                @tarantula.Price
+            </td>
+        </tr>
+    }
+    @if (isToSell == false)
+    {
+    <tr class="arg-no-t">
+        <td>
+            Nothing to sell
+        </td>
+    </tr>
+    }
+</table>
+
+

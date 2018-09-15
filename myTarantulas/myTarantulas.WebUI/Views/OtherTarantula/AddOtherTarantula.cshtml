@@ -1,0 +1,27 @@
+﻿@model myTarantulas.Domain.Entities.OtherTarantulas
+
+@{
+    ViewBag.Title = "AddOtherTarantula";
+    Layout = "~/Views/Shared/_BreederAddLayout.cshtml";
+}
+
+<div class="add-tarantula-container">
+    <div class="add-header">
+        Add other
+    </div>
+    @using (Html.BeginForm("AddOtherTarantula", "OtherTarantula"))
+    {
+        @Html.HiddenFor(a => a.OtherTarantulaID)
+        <p>@Html.TextBoxFor(a => a.Type, null, new { @class = "input-long", placeholder = "Name" })</p>
+        <p>@Html.TextBoxFor(a => a.Phase, null, new { @class = "input-long", placeholder = "Phase" })</p>
+        <p>@Html.TextBoxFor(a => a.Sex, null, new { @class = "input-long", placeholder = "Sex" })</p>
+
+        <p>@Html.TextBoxFor(a => a.NumberOf, null, new { @class = "input-long", placeholder = "Quantity" })</p>
+
+        <input type="submit" class="submit-new-tarantula" value="Add Now" />
+    }
+
+    <a href="@Url.Action("Others", "Breeder")">
+        <input type="button" class="submit-new-tarantula" value="Back" />
+    </a>
+</div>

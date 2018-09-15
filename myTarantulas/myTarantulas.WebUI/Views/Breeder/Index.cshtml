@@ -1,0 +1,49 @@
+﻿@model myTarantulas.WebUI.Models.UserAndTarantulaModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_BreederAccountPage.cshtml";
+}
+
+<div class="personal">
+    <div class="profil-image">
+        <img src="~/Img/profile-image.png" style="width: 220px; margin-left: 15px; margin-top: 15px; border-radius: 50%;"/>
+    </div>
+    <div class="profil-name">
+        @{ 
+            string username = Session["uname"].ToString();
+            @username.ToString();
+        }
+    </div>
+    <div class="number-of-tarantulas">
+        @if (Model.NumberOfTarantula == 1){
+            @:You have @Model.NumberOfTarantula tarantula
+        }
+        else{
+            @:You have @Model.NumberOfTarantula tarantulas
+        }
+
+    </div>
+    <div class="www-fb">
+        @if (Model.UserM.WebOrFb != null){
+            @Model.UserM.WebOrFb
+        }
+        else{
+            @:Add your email or Facebook
+        }     
+        <a href="/Breeder/AddW">
+            <img src="~/Img/plus.png" width="25" class="plus-fb" />
+        </a>
+    </div>
+</div>
+<div class="about-container">
+    <div class="about-image">
+        <img src="~/Img/animal-arachnid-close-up-236650.jpg" width="220" style="margin-top: 22px;" />
+    </div>
+    <div class="about-image">
+        <img src="~/Img/animal-art-close-up-628997.jpg" width="220" />
+    </div>
+    <div class="about-image">
+        <img src="~/Img/animal-close-up-sand-78788.jpg" width="220" style="margin-top: 15px;"/>
+    </div>
+</div>

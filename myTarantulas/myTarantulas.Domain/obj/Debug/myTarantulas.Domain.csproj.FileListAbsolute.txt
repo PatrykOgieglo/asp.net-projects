@@ -1,0 +1,52 @@
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\bin\Debug\myTarantulas.Domain.dll
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\bin\Debug\myTarantulas.Domain.pdb
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\bin\Debug\Ninject.dll
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\bin\Debug\Ninject.pdb
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\bin\Debug\Ninject.xml
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\obj\Debug\myTarantulas.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\obj\Debug\myTarantulas.Domain.dll
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\obj\Debug\myTarantulas.Domain.pdb
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\bin\Debug\myTarantulas.Domain.dll.config
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Patryk\Desktop\ASP.NET MVC\myTarantulas\myTarantulas.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\bin\Debug\myTarantulas.Domain.dll.config
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\bin\Debug\myTarantulas.Domain.dll
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\bin\Debug\myTarantulas.Domain.pdb
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\bin\Debug\Ninject.dll
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\bin\Debug\Ninject.pdb
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\bin\Debug\Ninject.xml
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\obj\Debug\myTarantulas.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\obj\Debug\myTarantulas.Domain.dll
+C:\Users\Patryk\Desktop\gitRepository\asp.net-projects\myTarantulas\myTarantulas.Domain\obj\Debug\myTarantulas.Domain.pdb
