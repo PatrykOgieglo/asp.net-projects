@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+    <style>
+        .navbar-right{
+            float: right !important;
+            margin-right: 15px; margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar navbar-inverse">
+        <a class="navbar-brand" href="#">
+            <span class="hidden-xs">Sklep sportowy</span>
+            <div class="visible-xs">Sklep</div>
+            <div class="visible-xs">Sportowy</div>
+        </a>
+        @Html.Action("Summary", "Cart")
+    </div>
+    <div class="row panel">
+        <div id="categories" class="col-xs-3">
+            @Html.Action("Menu", "Nav")
+        </div>
+        <div class="col-xs-8">
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>
